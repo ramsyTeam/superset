@@ -58,9 +58,9 @@ RUN mkdir -p /app/superset-frontend
 RUN mkdir -p /app/superset/assets
 COPY ./docker/frontend-mem-nag.sh /
 COPY ./superset-frontend /app/superset-frontend
-RUN /frontend-mem-nag.sh \
-        && cd /app/superset-frontend \
-        && npm ci
+RUN /frontend-mem-nag.sh 
+#        && cd /app/superset-frontend \
+#        && npm ci
 
 # This seems to be the most expensive step
 RUN cd /app/superset-frontend \

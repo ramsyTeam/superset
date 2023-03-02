@@ -51,7 +51,7 @@ export const HexChartViz = () => (
       row_limit: 5000,
       filter_nulls: true,
       adhoc_filters: [],
-      mapbox_style: 'mapbox://styles/mapbox/streets-v9',
+      mapbox_style: 'http://localhost:8070/styles/basic-preview/style.json',
       viewport: {
         bearing: -2.3984797349335167,
         latitude: 37.789795085160335,
